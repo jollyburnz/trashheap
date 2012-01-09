@@ -5,6 +5,7 @@
 var express = require('express')
   , routes = require('./routes')
 
+
 var app = module.exports = express.createServer();
 
 fs = require('fs');
@@ -36,6 +37,7 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.index);
+app.get('/rss.xml', routes.rss);
 
 app.listen(8080);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
