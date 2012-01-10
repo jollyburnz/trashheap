@@ -1,0 +1,20 @@
+---
+feed:
+   - title: The Heap
+     description: A collection of the Internets best trash
+     link: http://google.com
+     date: "Wed, 10 Jan 2012 4:00:00 EST"
+
+posts:
+   - title: Fraggle Frame Work
+     link: https://github.com/RumpleFraggle/FraggleFrame
+     description: My hello canvas application buit using the Fraggle Framework.
+     img: images/rumplefraggle.JPG
+   - title: Javascript YAML PARSER
+     link: https://github.com/RumpleFraggle/javascript-yaml-parser
+     description: A YAML parser for JS that works!
+     img: images/rumplefraggle.JPG
+ 
+...
+# vim: set ts=2 :
+# vim: set expandtab :
