@@ -1,0 +1,3 @@
+- heap/public/javascripts/jQtouch/
++ heap/public/javascripts/jQtouch/jqtouch/*
++ heap/public/javascripts/jQtouch/themes/*
