@@ -12,7 +12,7 @@ posts:
      img: images/construction.jpg
    - title: Fraggle Frame Work
      link: https://github.com/RumpleFraggle/FraggleFrame
-     description: My hello canvas application buit using the Fraggle Framework.
+     description: My hello canvas application built using the Fraggle Framework.
      img: images/rumplefraggle.JPG
    - title: Javascript YAML PARSER
      link: https://github.com/RumpleFraggle/javascript-yaml-parser
