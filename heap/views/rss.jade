@@ -1,7 +1,16 @@
-|<rss version="2.0">
-|<title> The Trash Heap </title>
-|<link>http:\/\/rumplefraggle.tumblr.com/</link>
-|<description>Some one loves you</description>
-each post in posts
-	include includes/feed_entry.jade
-|</rss>
+doctype xml
+rss(version='2.0' , xmlns:atom="http://www.w3.org/2005/Atom")
+  channel
+    title= feed.title
+    description= feed.description
+    link= feed.link
+    atom:link( href=feed.link , rel="self" , type="application/rss+xml" )
+    lastBuildDate= feed.date
+    pubDate= feed.date
+
+    each post in posts
+      item
+        title= post.title
+        description= post.description
+        link= post.link
+        guid= post.link
