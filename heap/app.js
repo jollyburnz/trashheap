@@ -9,7 +9,7 @@ var express = require('express')
 var app = module.exports = express.createServer();
 
 fs = require('fs');
-yaml = require('yaml');
+yaml = require('javascript-yaml-parser');
 
 // Configuration
 

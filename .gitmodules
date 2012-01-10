@@ -1,3 +1,6 @@
 [submodule "heap/public/javascripts/jQtouch"]
 	path = heap/public/javascripts/jQtouch
 	url = https://github.com/senchalabs/jQTouch.git
+[submodule "heap/node_modules/javascript-yaml-parser"]
+	path = heap/node_modules/javascript-yaml-parser
+	url = git@github.com:RumpleFraggle/javascript-yaml-parser.git
