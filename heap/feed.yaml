@@ -10,10 +10,6 @@ posts:
      link: https://github.com/RumpleFraggle/FraggleFrame
      description: My hello canvas application buit using the Fraggle Framework.
      img: images/rumplefraggle.JPG
-   - title: Javascript YAML PARSER
-     link: https://github.com/RumpleFraggle/javascript-yaml-parser
-     description: A YAML parser for JS that works!
-     img: images/rumplefraggle.JPG
  
 ...
 # vim: set ts=2 :
