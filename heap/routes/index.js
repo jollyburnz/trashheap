@@ -3,7 +3,7 @@
  * GET home page.
  */
 
-title='helloCanvas'
+title='Fellow Trash Collectors'
 
 exports.index = function(req, res){
 	
