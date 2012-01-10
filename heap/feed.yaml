@@ -6,6 +6,10 @@ feed:
      date: "Wed, 10 Jan 2012 4:00:00 EST"
 
 posts:
+   - title: UNDER CONSTRUCTION!
+     link: '#'
+     description: ''
+     img: images/construction.jpg
    - title: Fraggle Frame Work
      link: https://github.com/RumpleFraggle/FraggleFrame
      description: My hello canvas application buit using the Fraggle Framework.
@@ -13,8 +17,8 @@ posts:
    - title: Javascript YAML PARSER
      link: https://github.com/RumpleFraggle/javascript-yaml-parser
      description: A YAML parser for JS that works!
-     img: images/rumplefraggle.JPG
- 
+     img: images/nothing_to_do_with_yaml.jpg
+
 ...
 # vim: set ts=2 :
 # vim: set expandtab :
