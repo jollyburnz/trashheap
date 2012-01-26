@@ -4,3 +4,6 @@
 [submodule "heap/node_modules/javascript-yaml-parser"]
 	path = heap/node_modules/javascript-yaml-parser
 	url = git@github.com:RumpleFraggle/commonjs-javascript-yaml-parser.git
+[submodule "heap/public/javascripts/FraggleFrame"]
+	path = heap/public/javascripts/FraggleFrame
+	url = git@github.com:RumpleFraggle/FraggleFrame.git
