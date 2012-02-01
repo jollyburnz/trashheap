@@ -8,13 +8,18 @@ feed:
 posts:
    - title: UNDER CONSTRUCTION
      link: '#'
-     description: ''
+     description: 'All work here is subject to terrible'
      img: images/construction.jpg
    - title: Fraggle Frame Work
-     link: https://github.com/RumpleFraggle/FraggleFrame
+     link: './javascripts/FraggleFrame/example/index.html'
      description: My hello canvas application buit using the Fraggle Framework.
      img: images/rumplefraggle.JPG
- 
+   - title: Overlayer
+     link: './javascripts/Overlayer/example.html'
+     description: Simple Zepto based pop up alert library.
+     img: images/overlayer.jpg
+
+
 ...
 # vim: set ts=2 :
 # vim: set expandtab :
