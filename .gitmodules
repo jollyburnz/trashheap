@@ -1,12 +1,9 @@
 [submodule "app/public/javascripts/jQtouch"]
-	path = heap/public/javascripts/jQtouch
+	path = app/public/javascripts/jQtouch
 	url = https://github.com/senchalabs/jQTouch.git
-[submodule "app/node_modules/javascript-yaml-parser"]
-	path = heap/node_modules/javascript-yaml-parser
-	url = git@github.com:RumpleFraggle/commonjs-javascript-yaml-parser.git
+[submodule "app/node_modules/yaml"]
+	path = app/node_modules/yaml
+	url = https://github.com/h4evr/commonjs-javascript-yaml-parser.git
 [submodule "app/public/javascripts/Overlayer"]
 	path = app/public/javascripts/Overlayer
 	url = git@github.com:RumpleFraggle/overlayer.git
-[submodule "app/public/javascripts/FraggleFrame"]
-	path = app/public/javascripts/FraggleFrame
-	url = git@github.com:RumpleFraggle/FraggleFrame.git
