@@ -1,4 +1,7 @@
 
+var yaml = require('yaml');
+var fs = require('fs');
+
 /*
  * GET home page.
  */
@@ -6,17 +9,15 @@
 title='Fellow Trash Collectors'
 
 exports.index = function(req, res){
-	
-	file_contents = fs.readFileSync('feed.yaml','utf8');
-	content = yaml.eval(file_contents);
-	res.render('index', { title: title, posts:content.posts})
-};
 
+	var file = 'yaml/'+res.params[0]'.yaml';
 
-exports.rss = function(req, res){
+	fs.fileStat(file,function(){
+
+	});
+
+	var file_contents = fs.readFileSync(,'utf8');
+	var content = yaml.eval(file_contents);
 	
-	file_contents = fs.readFileSync('feed.yaml','utf8');
-	content= yaml.eval(file_contents);
-	console.log(content.feed[0]);
-	res.render('rss', { title: title,posts:content.posts,feed:content.feed[0]})
+	res.render('index',{content:content});
 };
