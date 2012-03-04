@@ -1,8 +1,14 @@
 !!!
 html
 	head
-		title= 'H.art'
-		meta(name="apple-mobile-web-app-capable",content="yes">
+		title= content.title
+		meta(name="apple-mobile-web-app-capable",content="yes")
+		meta(name="viewport" , content="width=device-width" , initial-scale="1.0" , maximum-scale="1.0" , user-scalable="no")
 		link(rel='stylesheet', href='/stylesheets/style.css')
-	//-script(src='http://192.168.1.12:8080/target/target-script-min.js#anonymous');
+		link(rel='stylesheet', href='/javascripts/jQTouch/themes/css/apple.css')
+		script(src="/javascripts/jQTouch/src/lib/zepto.js")
+		script(src="/javascripts/jQTouch/src/jqtouch.js")
+
+		script(src="/javascripts/trash.js")
+		//-script(src='http://192.168.1.12:8080/target/target-script-min.js#anonymous');
 	body!= body
