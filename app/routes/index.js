@@ -6,8 +6,17 @@ var fs = require('fs');
  * GET home page.
  */
 
-
 exports.index = function(req, res){
+
+var merge = function(obj_1,obj_2){
+	for(var key in obj_2){
+		obj_1[key] = obj_2[key];
+	}
+		return obj_1;
+};
+
+	var content = {};
+		content.title = 'H.art';
 
 
 
@@ -19,7 +28,7 @@ exports.index = function(req, res){
 				if(stats.isFile()){
 					fs.readFile(file,'utf-8',function(err,file_contents){
 						if(!err){
-							var content = yaml.eval(file_contents); 
+							content = merge(content,yaml.eval(file_contents)); 
 							res.render('index',{"content":content});	
 						}else{
 							res.render('index',{"content":{}});
