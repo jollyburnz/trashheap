@@ -34,7 +34,9 @@ app.configure('production', function(){
 
 // Routes
 
-app.get('/:yaml', routes.index);
+app.get('/',routes.index);
+app.get('/index' , routes.index );
+app.get('/index/:yaml', routes.index);
 
 app.listen(8081);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
