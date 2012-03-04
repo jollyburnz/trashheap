@@ -7,4 +7,15 @@ var jQT = new $.jQTouch({
 
 $(function(){
 	// Custom Javascript (onReady)
+
+
+	document.addEventListener(
+	  'touchmove',
+	  function(e) {
+	      e.preventDefault();
+	    },
+	  false
+	);
+
+
 });
