@@ -1,6 +1,18 @@
 include includes/layout
+include includes/header
+include includes/left_nav
+include includes/right_nav
+include includes/footer
 	#jqt
 		#main
-			.toolbar
-				h1= content.title
-include includes/footer
+			ul.rounded
+				li
+					a(href='#one') One
+				li
+					a(href='#two') Two
+				li
+					a(href='#three') Three
+		include slides/one
+		include slides/two
+		include slides/three
+				
