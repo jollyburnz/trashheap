@@ -1,5 +1,5 @@
 
-var yaml = require('yamlparser');
+var yaml = require('js-yaml');
 var fs = require('fs');
 
 /*
@@ -28,7 +28,7 @@ var merge = function(obj_1,obj_2){
 				if(stats.isFile()){
 					fs.readFile(file,'utf-8',function(err,file_contents){
 						if(!err){
-							content = merge(content,yaml.eval(file_contents)); 
+							content = merge(content,yaml.load(file_contents)); 
 							res.render('index',{"content":content});	
 						}else{
 							res.render('index',{"content":{}});
