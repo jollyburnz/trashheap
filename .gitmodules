@@ -1,0 +1,3 @@
+[submodule "app/public/javascripts/jQTouch"]
+	path = app/public/javascripts/jQTouch
+	url = https://github.com/senchalabs/jQTouch.git
