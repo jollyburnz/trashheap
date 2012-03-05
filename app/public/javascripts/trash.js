@@ -17,5 +17,21 @@ $(function(){
 	  false
 	);
 
+	
+	$('#jqt').swipeRight(function(evt,data){
+	
+	});
+	
+	$('#jqt').swipeLeft(function(evt,data){
+	
+	});
+
+	$('#jqt').swipeDown(function(evt,data){
+	
+	});
+
+
+
+
 
 });
