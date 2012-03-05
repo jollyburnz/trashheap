@@ -1,0 +1,11 @@
+---
+options:
+        title: 'H.art'
+        slides:
+                one:
+                        transition: 'dissolve'
+                two:
+                        transition: 'dance'
+                three:
+                        transition: 'spoogle'
+...
