@@ -1,3 +1,6 @@
 [submodule "app/public/javascripts/jQTouch"]
 	path = app/public/javascripts/jQTouch
 	url = https://github.com/senchalabs/jQTouch.git
+[submodule "app/public/javascripts/overlayer"]
+	path = app/public/javascripts/overlayer
+	url = git@github.com:RumpleFraggle/overlayer
