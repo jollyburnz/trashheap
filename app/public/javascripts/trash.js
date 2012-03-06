@@ -60,7 +60,7 @@ $(function(){
 			this.lock = true;
 			animation = animation || this.default_animation;
 				if(!this.on_extra){
-					jQT.goTo('#extra',animation);
+					jQT.goTo('#artist',animation);
 					this.on_extra = !this.on_extra;
 				}
 		}
@@ -106,6 +106,10 @@ $(function(){
 
 
 	slider = new Slider($main,$slides);
+
+	Slider.prototype.sponser = function(){
+		slider.goTo('#sponser');
+	}
 
 	
 	$('#jqt').swipeRight(function(evt,data){
