@@ -1,5 +1,6 @@
 * {
 font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+overflow:hidden;
 }
 
 name {
@@ -20,47 +21,67 @@ body {
 }
 
 #jqt .current {
-width:80% !important;
-min-height:80% !important;
-height:80% !important;
+width:81% !important;
+min-height:81% !important;
+height:81% !important;
 margin-top:13% !important;
 margin-left:10% !important;
 }
 
 #left_nav {
-width:10%;
+width:11%;
 height:100%;
-background-color:red;
+background-color:#f1f1f2;
 position:absolute;
 z-index:1000;
 }
 
 #right_nav {
 position:absolute;
-width:10%;
+width:11%;
 height:100%;
 left:90%;
-background-color:red;
+background-color:#f1f1f2;
 z-index:1000;
 }
 
 #banner {
-height:13%;
-width:80%;
+height:14%;
+width:81%;
 position:absolute;
 left:10%;
-background-color:blue;
+background-color:#f1f1f2;
 z-index:1000;
 }
 
 #footer{
 height:7%;
-width:80%;
+width:81%;
 top:93%;
 left:10%;
-background-color:blue;
+background-color:#f1f1f2;
 position:absolute;
 z-index:1000;
 }
 
+#footer * {
+display:inline-block;
+}
+
+
+#jqt .spo.info {
+height:100%;
+background-color:#f1f1f2;
+}
+
+#jqt .spo.info h1{
+margin-bottom:50px;
+}
+
+#raptor {
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-color:#f1f1f2;
+}
 
