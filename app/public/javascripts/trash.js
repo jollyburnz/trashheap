@@ -17,6 +17,7 @@ $(function(){
 	  false
 	);
 	
+
 	Slider = function(main,slides){
 		this.slides = main.concat(slides);
 		this.current = 0;
@@ -53,25 +54,23 @@ $(function(){
 
 		};
 
-		Slider.prototype.on_extra = false;
 
 
-		Slider.prototype.extra_go = function(animation){
-			this.lock = true;
+		Slider.prototype.extra_go = function(element,animation,lock){
+			if(typeof lock != 'undefined'){
+				this.lock = lock;
+			}else{
+				this.lock = true;
+			}
+			
 			animation = animation || this.default_animation;
-				if(!this.on_extra){
-					jQT.goTo('#extra',animation);
-					this.on_extra = !this.on_extra;
-				}
+				jQT.goTo(element,animation);
 		};
 
 		Slider.prototype.extra_leave = function(animation){
 			this.lock = false;
 			animation = animation || this.default_animation;
-				if(this.on_extra){
 					jQT.goTo($(this.slides[this.current]),animation);
-					this.on_extra = !this.on_extra;
-				}
 		};
 
 		Slider.prototype.home = function(animation){
@@ -98,14 +97,45 @@ $(function(){
 		};
 
 
+	////////////////////////// Application Logic
 
-	// var $main $slides Slider slider
+	overlayer = new Overlayer('body');
 
-	$main	= $('#main');
-	$slides = $('.slide');
+	
+	 logo = $('#banner .logo');
+	 center_element = function(element,to){
+		var parent = {};
+			if(to){
+				parent.width  = to.width();
+				parent.height = to.height();	
+			}else{
+				parent.width  = element.parent().width();
+				parent.height = element.parent().height();
+			}
 
 
-	slider = new Slider($main,$slides);
+		element.css('left', parent.width/2  - element.width() /2 );
+		element.css('top' , parent.height/2 - element.height()/2 );
+	};
+	
+		logo.one('load',function(){
+			center_element(logo);	
+		});
+
+
+	_V_('video').ready(function(){
+		center_element($('#video'));
+	});
+
+
+	$('#contact .submit').bind('click',function(){ overlayer.open($('.overlays .thank_you')).timer_close(2000); } );
+
+
+	$('body').bind('turn',function(event,info){
+		center_logo();
+	});
+
+	slider = new Slider($('#main') , $('.slide') );
 
 	
 	$('#jqt').swipeRight(function(evt,data){
@@ -121,7 +151,7 @@ $(function(){
 	});
 
 	$('#jqt').swipeDown(function(evt,data){
-		slider.extra_go('pop');
+		slider.extra_go('#contact','pop',false);
 	});
 
 
